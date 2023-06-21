@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  cpython:
+    build:
+      context: .
+    container_name: cpython_cont
+    network_mode: "host"
+    privileged: true
+    environment:
+    - DISPLAY=${DISPLAY}
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ../cpython-internals:/usr/src/app
+    tty: true
+    restart: always
