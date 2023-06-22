@@ -2,3 +2,6 @@
 	path = cpython
 	url = git@github.com:python/cpython.git
 	branch = 3.9
+[submodule "cpython-book-samples"]
+	path = cpython-book-samples
+	url = git@github.com:tonybaloney/cpython-book-samples.git
